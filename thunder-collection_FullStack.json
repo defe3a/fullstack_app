@@ -1,0 +1,182 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "FullStack",
+    "dateExported": "2023-09-25T19:09:25.502Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "a53eaa12-46c4-4ca6-8899-cd19fa096d10",
+            "name": "characters",
+            "containerId": "",
+            "created": "2023-09-25T16:19:45.162Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "2284adba-9d18-45a4-8d9c-e29b4b5065d9",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-09-25T16:20:06.848Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b4e63270-1677-4f73-b2a4-89ffa9768492",
+            "colId": "131d73ee-9364-4fef-8ed8-7212f248f9ba",
+            "containerId": "2284adba-9d18-45a4-8d9c-e29b4b5065d9",
+            "name": "get users",
+            "url": "localhost:5000/api/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-09-24T04:15:56.547Z",
+            "modified": "2023-09-24T04:18:57.634Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e4efd37c-b5de-41eb-b9ae-362fa4d646e4",
+            "colId": "131d73ee-9364-4fef-8ed8-7212f248f9ba",
+            "containerId": "a53eaa12-46c4-4ca6-8899-cd19fa096d10",
+            "name": "create character",
+            "url": "localhost:5000/api/character",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-25T05:18:40.811Z",
+            "modified": "2023-09-25T18:00:49.373Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Nombre del Personaje3 para test3 con stamp3\",\n  \"rostro\": \"rostro\",\n  \"parteSuperior\": \"Camisa del Personaje\",\n  \"parteInferior\": \"Pantalones del Personaje\",\n  \"zapatos\": \"Zapatos del Personaje\",\n  \"isDefault\": false\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidXN1YXJpb1BydWViYUBleGFtcGxlLmNvbSIsInVzZXJOYW1lIjoidXNlclRlc3QiLCJmdWxsTmFtZSI6Ik5vbWJyZSBDb21wbGV0byBkZWwgVXN1YXJpbyIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDIzLTA5LTI1VDE3OjA4OjU1LjczN1oiLCJ1cGRhdGVkQXQiOiIyMDIzLTA5LTI1VDE3OjA4OjU1LjczN1oiLCJfX3YiOjAsImlkIjoiNjUxMWJlYTc5ODJmZmI4NjczYjgyZDQ3In0sImlhdCI6MTY5NTY2MTc3MCwiZXhwIjoxNjk1NjY1MzcwfQ.w6NZOxKjjk3eGFML0RcBkgxw15B0Idowci2SII_Tw_Q"
+            },
+            "tests": []
+        },
+        {
+            "_id": "715ad2bc-f79b-49d8-b641-0cb29aeb6130",
+            "colId": "131d73ee-9364-4fef-8ed8-7212f248f9ba",
+            "containerId": "2284adba-9d18-45a4-8d9c-e29b4b5065d9",
+            "name": "post user",
+            "url": "localhost:5000/api/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-09-24T04:41:38.614Z",
+            "modified": "2023-09-25T17:52:15.083Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"new@example.com\",\n  \"userName\": \"newUser\",\n  \"fullName\": \"Nombre Completo del Usuario\",\n  \"isActive\": true,\n  \"password\": \"contraseña_segura\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c88a40bf-da64-4385-a2f9-b4df99a3fdaa",
+            "colId": "131d73ee-9364-4fef-8ed8-7212f248f9ba",
+            "containerId": "a53eaa12-46c4-4ca6-8899-cd19fa096d10",
+            "name": "characters by user",
+            "url": "localhost:5000/api/character/byUser",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-09-25T16:17:37.723Z",
+            "modified": "2023-09-25T17:10:37.444Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidXN1YXJpb1BydWViYUBleGFtcGxlLmNvbSIsInVzZXJOYW1lIjoidXNlclRlc3QiLCJmdWxsTmFtZSI6Ik5vbWJyZSBDb21wbGV0byBkZWwgVXN1YXJpbyIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDIzLTA5LTI1VDE3OjA4OjU1LjczN1oiLCJ1cGRhdGVkQXQiOiIyMDIzLTA5LTI1VDE3OjA4OjU1LjczN1oiLCJfX3YiOjAsImlkIjoiNjUxMWJlYTc5ODJmZmI4NjczYjgyZDQ3In0sImlhdCI6MTY5NTY2MTc3MCwiZXhwIjoxNjk1NjY1MzcwfQ.w6NZOxKjjk3eGFML0RcBkgxw15B0Idowci2SII_Tw_Q"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7d137ad6-822c-4427-97aa-83e2381bc326",
+            "colId": "131d73ee-9364-4fef-8ed8-7212f248f9ba",
+            "containerId": "",
+            "name": "post auth",
+            "url": "localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-09-25T04:37:57.422Z",
+            "modified": "2023-09-25T17:09:30.640Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"usuarioPrueba@example.com\",\n  \"password\": \"admin1234\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0046e55b-78a2-4f64-9172-c83c4f0b18ef",
+            "colId": "131d73ee-9364-4fef-8ed8-7212f248f9ba",
+            "containerId": "a53eaa12-46c4-4ca6-8899-cd19fa096d10",
+            "name": "all characters",
+            "url": "localhost:5000/api/character",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-09-25T16:23:24.275Z",
+            "modified": "2023-09-25T17:10:25.879Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidXN1YXJpb1BydWViYUBleGFtcGxlLmNvbSIsInVzZXJOYW1lIjoidXNlclRlc3QiLCJmdWxsTmFtZSI6Ik5vbWJyZSBDb21wbGV0byBkZWwgVXN1YXJpbyIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDIzLTA5LTI1VDE3OjA4OjU1LjczN1oiLCJ1cGRhdGVkQXQiOiIyMDIzLTA5LTI1VDE3OjA4OjU1LjczN1oiLCJfX3YiOjAsImlkIjoiNjUxMWJlYTc5ODJmZmI4NjczYjgyZDQ3In0sImlhdCI6MTY5NTY2MTc3MCwiZXhwIjoxNjk1NjY1MzcwfQ.w6NZOxKjjk3eGFML0RcBkgxw15B0Idowci2SII_Tw_Q"
+            },
+            "tests": []
+        },
+        {
+            "_id": "d8ee2cee-8dc5-46f4-86e1-0653ff385678",
+            "colId": "131d73ee-9364-4fef-8ed8-7212f248f9ba",
+            "containerId": "a53eaa12-46c4-4ca6-8899-cd19fa096d10",
+            "name": "last n characters",
+            "url": "localhost:5000/api/character/lasts?size=4",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-09-25T16:24:10.127Z",
+            "modified": "2023-09-25T17:55:48.471Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "size",
+                    "value": "4",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidXN1YXJpb1BydWViYUBleGFtcGxlLmNvbSIsInVzZXJOYW1lIjoidXNlclRlc3QiLCJmdWxsTmFtZSI6Ik5vbWJyZSBDb21wbGV0byBkZWwgVXN1YXJpbyIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDIzLTA5LTI1VDE3OjA4OjU1LjczN1oiLCJ1cGRhdGVkQXQiOiIyMDIzLTA5LTI1VDE3OjA4OjU1LjczN1oiLCJfX3YiOjAsImlkIjoiNjUxMWJlYTc5ODJmZmI4NjczYjgyZDQ3In0sImlhdCI6MTY5NTY2MTc3MCwiZXhwIjoxNjk1NjY1MzcwfQ.w6NZOxKjjk3eGFML0RcBkgxw15B0Idowci2SII_Tw_Q"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e8a82db-5c7d-4ef4-a071-6a746277bdc1",
+            "colId": "131d73ee-9364-4fef-8ed8-7212f248f9ba",
+            "containerId": "a53eaa12-46c4-4ca6-8899-cd19fa096d10",
+            "name": "update character",
+            "url": "localhost:5000/api/character/65111c1220e979b0b0db8672",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-09-25T17:42:19.964Z",
+            "modified": "2023-09-25T17:49:56.734Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Fede2\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidXN1YXJpb1BydWViYUBleGFtcGxlLmNvbSIsInVzZXJOYW1lIjoidXNlclRlc3QiLCJmdWxsTmFtZSI6Ik5vbWJyZSBDb21wbGV0byBkZWwgVXN1YXJpbyIsImlzQWN0aXZlIjp0cnVlLCJjcmVhdGVkQXQiOiIyMDIzLTA5LTI1VDE3OjA4OjU1LjczN1oiLCJ1cGRhdGVkQXQiOiIyMDIzLTA5LTI1VDE3OjA4OjU1LjczN1oiLCJfX3YiOjAsImlkIjoiNjUxMWJlYTc5ODJmZmI4NjczYjgyZDQ3In0sImlhdCI6MTY5NTY2MTc3MCwiZXhwIjoxNjk1NjY1MzcwfQ.w6NZOxKjjk3eGFML0RcBkgxw15B0Idowci2SII_Tw_Q"
+            },
+            "tests": []
+        }
+    ]
+}
